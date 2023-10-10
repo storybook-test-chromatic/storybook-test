@@ -19,7 +19,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
-    "chromatic": "npx chromatic --project-token=chpt_ea88ec70367b728"
+    "chromatic": "npx chromatic --project-token=chpt_ea88ec70367b728",
+    "coverage-report": "yarn test-storybook --coverage && npx nyc report --reporter=lcov -t coverage/storybook --report-dir coverage/storybook && open ./coverage/storybook/lcov-report/index.html"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-coverage": "^0.0.9",
     "@storybook/addon-essentials": "^7.4.4",
     "@storybook/addon-interactions": "^7.4.5",
     "@storybook/addon-links": "^7.4.4",
