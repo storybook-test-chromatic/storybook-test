@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.4",
     "@storybook/addon-coverage": "^0.0.9",
     "@storybook/addon-essentials": "^7.4.4",
     "@storybook/addon-interactions": "^7.4.5",
